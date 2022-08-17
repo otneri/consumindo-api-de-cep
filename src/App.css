@@ -1,0 +1,75 @@
+#root {
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+}
+.body{
+  background-color: azure;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+;
+}
+.title {
+  animation: flipTitle 1s;
+  font-size: 3em;
+}
+
+@keyframes flipTitle {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+
+  }
+}
+
+.conteinerInput {
+  background-color: rgba(34, 91, 141, 0.372);
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.conteinerInput input{
+  background-color: transparent;
+  font-size: medium;
+  padding: 0em .3em;
+  margin-right: 0.3em;
+  outline: none;
+  border:0;
+  color: black;
+}
+.conteinerInput input::placeholder{
+  color: black;
+}
+
+.conteinerInput button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.conteinerInput button:hover {
+  scale: 1.2;
+}
+
+main {
+  display: flex;
+  max-width: 20em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(34, 91, 141, 0.372);
+  margin: 2em;
+  padding: 2em;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 2em;
+}
