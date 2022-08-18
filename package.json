@@ -1,10 +1,13 @@
 {
+  "homepage": "https://otneri.github.io/consumindo-api-de-cep/",
   "name": "site0",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -18,7 +21,11 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",
+    "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "vite": "^3.0.7"
   }
+    
 }
+
+    

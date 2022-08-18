@@ -43,15 +43,20 @@ function App() {
           </button>
         </div>
       </div >
+      
       {Object.keys(cep).length > 0 && (
-        <main className='card'>
+        <span>{cep.length === 0 ?(
+          <p>Carregando...</p>
+          ): (<main className='card'>
           <h2>{`CEP : ${cep.cep}`}</h2>
           <span>{cep.logradouro}</span>
           <span>{`${cep.complemento}`}</span>
           <span>{cep.bairro}</span>
           <span>{cep.localidade} - {cep.uf}</span>
-        </main>
+        </main>) }</span>
+        
       )}
+
         
     </div>
   )
